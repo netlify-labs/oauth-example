@@ -1,4 +1,4 @@
-
+const fetch = require('node-fetch')
 
 async function getUser(token) {
   const url = `https://api.netlify.com/api/v1/user/`
