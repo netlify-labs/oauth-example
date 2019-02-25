@@ -1,0 +1,10 @@
+{
+  "name": "backend-functions",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "netlify": "^2.3.1",
+    "node-fetch": "^2.3.0",
+    "simple-oauth2": "^2.2.1"
+  }
+}
