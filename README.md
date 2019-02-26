@@ -1,32 +1,51 @@
-# Netlify OAuth
+<h1> Netlify OAuth
+  <a href='https://app.netlify.com/sites/oauth-example/deploys'><img align="right" src='https://api.netlify.com/api/v1/badges/ff09f383-7ad2-4b9e-a14d-cc4a868f16c4/deploy-status'/></a>
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-faunadb-example">
+    <img align="right" src="/static/media/deploy-to-netlify.4fdff352.svg" class="deploy-button" alt="deploy to netlify">
+  </a>
+</h1>
 
 Example of how to use Netlify OAuth Applications
 
+## Use cases
+
+Using Netlify OAuth you can create custom experiences using the [Netlify Open API](https://open-api.netlify.com/#/default).
+
+**Here are some use cases:**
+
+- Building a custom Netlify admin UI
+- Building Netlify Desktop Applications
+- Making an App that user's existing Netlify sites
+
 ## Setup
 
-1. Deploy a new site
+1. **Create and Deploy a new Netlify site**
 
-2. [Create OAuth application](https://app.netlify.com/account/applications)
+    You can use an [this repo](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-labs/oauth-example)
 
-    Create your Oauth application. Add in your callback URL. This can be changed later.
+2. **[Create OAuth application](https://app.netlify.com/account/applications)**
+
+    Create your OAuth application in the Netlify admin UI.
+
+    Add in your callback URL. This can be changed later.
 
     ![image](https://user-images.githubusercontent.com/532272/53382433-3066da00-3929-11e9-978a-74d802c212db.png)
 
-3. After creating your OAuth app, Click on show credentials
+3. **After creating your OAuth app, Click on show credentials**
 
     Save these credentials for the next step
 
     ![image](https://user-images.githubusercontent.com/532272/53382437-3957ab80-3929-11e9-9cbf-b812cd04c2c7.png)
 
-4. Take your OAuth credentials and add them to your OAuth app site
+4. **Take your OAuth credentials and add them to your OAuth app site**
 
     Set `NETLIFY_OAUTH_CLIENT_ID` and `NETLIFY_OAUTH_CLIENT_SECRET` environment variables in your site
 
     ![image](https://user-images.githubusercontent.com/532272/53382472-53918980-3929-11e9-9d24-598247b5f2c6.png)
 
-5. Then trigger a new deploy
+5. **Then trigger a new deploy**
 
     ![image](https://user-images.githubusercontent.com/532272/53382490-6015e200-3929-11e9-9f6b-92be59d78e59.png)
 
 
-6. Visit your site and verify the OAuth flow is working
+6. **Visit your site and verify the OAuth flow is working**
