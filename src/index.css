@@ -9,16 +9,5 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-wrapper {
-  margin-top: 50px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

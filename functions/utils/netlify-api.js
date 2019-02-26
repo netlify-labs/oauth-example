@@ -2,7 +2,6 @@ const fetch = require('node-fetch')
 
 async function getUser(token) {
   const url = `https://api.netlify.com/api/v1/user/`
-  console.log('token', token)
   const response = await fetch(url, {
     method: 'GET',
     headers: {
@@ -10,7 +9,7 @@ async function getUser(token) {
       Authorization: `Bearer ${token}`
     }
   })
-  console.log('response', response)
+  
   const data = await response.json()
 
   if (response.status === 422) {

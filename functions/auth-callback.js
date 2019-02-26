@@ -34,15 +34,33 @@ exports.handler = async (event, context) => {
 
     const user = await getUser(token)
 
+    // return {
+    //   statusCode: 200,
+    //   body: JSON.stringify({
+    //     user: user,
+    //     authResult: authResult,
+    //     state: state,
+    //     encode: Buffer.from(token, 'binary').toString('base64')
+    //   })
+    // }
+
+    const encodedUserData = querystring.stringify({
+      email: user.email || "NA",
+      full_name: user.full_name || "NA",
+      avatar: user.avatar_url || "NA"
+    })
+
+    /* Redirect user to authorizationURI */
     return {
-      statusCode: 200,
-      body: JSON.stringify({
-        user: user,
-        authResult: authResult,
-        state: state,
-        encode: Buffer.from(token, 'binary').toString('base64')
-      })
+      statusCode: 302,
+      headers: {
+        Location: `${state.url}#${encodedUserData}&csrf=${state.csrf}&token=${Buffer.from(token, 'binary').toString('base64')}`,
+        'Cache-Control': 'no-cache' // Disable caching of this response
+      },
+      body: '' // return body for local dev
     }
+
+
   } catch (e) {
     console.log('Access Token Error', e.message)
     console.log(e)
