@@ -16,6 +16,7 @@ Using Netlify OAuth you can create custom experiences using the [Netlify Open AP
 - Building a custom Netlify admin UI
 - Building Netlify Desktop Applications
 - Making an App that user's existing Netlify sites
+- Manage Netlify sites, new deployments, & other things from inside your third party application
 
 ## Setup
 
