@@ -6,7 +6,8 @@
     "netlify": "^2.4.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "time-ago": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

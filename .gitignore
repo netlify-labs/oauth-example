@@ -13,7 +13,10 @@ package-lock.json
 /build
 .netlify
 
+
 # misc
+misc.md
+src/stub.js
 .DS_Store
 .env.local
 .env.development.local

@@ -1,4 +1,3 @@
-
 /**
  * Generate uuid
  * @return {String} - uuidv4
@@ -36,12 +35,4 @@ export function removeHash() {
 
 function decode(s) {
   return decodeURIComponent(s).replace(/\+/g, ' ')
-}
-
-
-export function matchText(search, text) {
-  if (!text || !search) {
-    return false
-  }
-  return text.toLowerCase().indexOf(search.toLowerCase()) > -1
 }
