@@ -207,9 +207,9 @@ export default class App extends Component {
     if (user && !user.token) {
       return (
         <div className="app">
-          <h1>Please Login</h1>
+          <h1>Netlify Site Search</h1>
           <button onClick={this.handleAuth}>
-            Netlify OAuth login
+            Login via Netlify
           </button>
         </div>
       )
@@ -226,7 +226,7 @@ export default class App extends Component {
             </button>
           </span>
         </h1>
-        <div>
+        <div className='contents'>
           <input
             className="search"
             onChange={this.handleFilterInput}

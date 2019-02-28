@@ -103,6 +103,7 @@ button:hover {
   position: relative;
   width: 100%;
   width: 102.4px;
+  border: none;
 }
 .site-screenshot img[alt]:after {
   display: block;
@@ -146,4 +147,80 @@ button:hover {
 }
 .site-repo-link {
   font-size: 12px;
+}
+
+@media (max-width: 1400px) {
+  .site-repo-link {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .site-functions {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .site-team {
+    display: none;
+  }
+}
+
+@media (max-width: 830px) {
+  .site-create-time {
+    display: none;
+  }
+  .search {
+    appearance: none;
+    border: 1px solid rgba(120,130,152,.25);
+    font-size: 16px;
+  }
+  .site-screenshot img[alt]:after {
+    content: none;
+  }
+  .site-screenshot, .site-screenshot img {
+    background: #dadcdd;
+    min-height: 50px;
+    min-width: 78px;
+    width: 78px;
+    height: 50px;
+    margin: 0 20px 0 0;
+  }
+  .site-info {
+    min-width: 350px;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 720px) {
+  .app {
+    margin: 15px;
+  }
+  .app h1 {
+    font-size: 22px;
+  }
+  .title-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contents {
+    overflow: hidden;
+  }
+  .contents input {
+    margin-left: 3px;
+  }
+  .site-wrapper, .site-wrapper-header {
+    padding-left: 10px;
+  }
+  .site-publish-time {
+    display: none;
+  }
+  .site-info h2 {
+    font-size: 18px;
+  }
+  .site-meta a {
+    font-size: 13px;
+  }
 }
