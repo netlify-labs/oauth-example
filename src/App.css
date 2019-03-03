@@ -205,6 +205,9 @@ button:hover {
     display: flex;
     justify-content: space-between;
   }
+  .title-inner button {
+    margin-right: 40px;
+  }
   .contents {
     overflow: hidden;
   }

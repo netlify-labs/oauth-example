@@ -10,6 +10,7 @@ import {
   sortByRepo,
   matchText
 } from './utils/sort'
+import ForkMe from './components/ForkMe'
 import './App.css'
 
 // import stub from './stub'
@@ -228,6 +229,7 @@ export default class App extends Component {
     if (user && !user.token) {
       return (
         <div className='app'>
+          <ForkMe url='https://github.com/netlify-labs/oauth-example' />
           <h1>Netlify Site Search</h1>
           <button onClick={this.handleAuth}>Login via Netlify</button>
         </div>
@@ -237,6 +239,7 @@ export default class App extends Component {
     /* Show admin UI */
     return (
       <div className='app'>
+        <ForkMe url='https://github.com/netlify-labs/oauth-example' />
         <h1>
           <span className='title-inner'>
             Hi {user.full_name || 'Friend'}
