@@ -13,7 +13,8 @@
     "start": "react-scripts start",
     "build": "npm-run-all --parallel build:**",
     "build:app": "react-scripts build",
-    "build:functions": "cd functions && npm install"
+    "build:functions": "cd functions && npm install",
+    "deploy": "npm run build && netlify deploy -p"
   },
   "eslintConfig": {
     "extends": "react-app"

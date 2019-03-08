@@ -1,7 +1,11 @@
 .app {
   margin: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
 }
-
+.app h1 {
+  margin-bottom: 30px;
+}
 .title-inner {
   display: flex;
   align-items: center;
@@ -18,7 +22,6 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 18px;
   font-size: 15px;
   border: 1px solid #e9ebeb;
   border-bottom-color: #e1e3e3;
@@ -34,7 +37,10 @@ button {
   color: #fff;
   border-color: transparent;
 }
-button:hover {
+.primary-button {
+  padding: 13px 18px;
+}
+.primary-button:hover {
   background: #00c2b2;
 }
 
@@ -196,9 +202,11 @@ button:hover {
 @media (max-width: 720px) {
   .app {
     margin: 15px;
+    margin-top: 20px;
   }
   .app h1 {
     font-size: 22px;
+    margin-bottom: inherit;
   }
   .title-inner {
     width: 100%;

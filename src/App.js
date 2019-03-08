@@ -11,6 +11,7 @@ import {
   matchText
 } from './utils/sort'
 import ForkMe from './components/ForkMe'
+import loginButton from './assets/netlify-login-button.svg'
 import './App.css'
 
 // import stub from './stub'
@@ -231,7 +232,9 @@ export default class App extends Component {
         <div className='app'>
           <ForkMe url='https://github.com/netlify-labs/oauth-example' />
           <h1>Netlify Site Search</h1>
-          <button onClick={this.handleAuth}>Login via Netlify</button>
+          <button onClick={this.handleAuth} >
+            <img alt='login to netlify' className='login-button' src={loginButton} />
+          </button>
         </div>
       )
     }
@@ -243,7 +246,9 @@ export default class App extends Component {
         <h1>
           <span className='title-inner'>
             Hi {user.full_name || 'Friend'}
-            <button onClick={this.handleLogout}>Logout</button>
+            <button className='primary-button' onClick={this.handleLogout}>
+              Logout
+            </button>
           </span>
         </h1>
         <div className='contents'>
