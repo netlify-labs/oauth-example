@@ -50,3 +50,8 @@ Using Netlify OAuth you can create custom experiences using the [Netlify Open AP
 
 
 6. **Visit your site and verify the OAuth flow is working**
+
+## How it works
+
+![Netlify OAuth + Functions](https://user-images.githubusercontent.com/532272/54178445-106c0600-4453-11e9-998f-564a521dfc6b.png)
+
