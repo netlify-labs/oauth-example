@@ -22,6 +22,10 @@ Using Netlify OAuth you can create custom experiences using the [Netlify Open AP
 
 <a href="https://www.youtube.com/watch?v=LN8cL2yPR3c"><img src="https://user-images.githubusercontent.com/532272/54240254-c75f9480-44da-11e9-8d76-b79bc7323b59.png" /></a>
 
+## How it works
+
+![Netlify OAuth + Functions](https://user-images.githubusercontent.com/532272/54178445-106c0600-4453-11e9-998f-564a521dfc6b.png)
+
 ## Setup
 
 1. **Create and Deploy a new Netlify site**
@@ -54,8 +58,4 @@ Using Netlify OAuth you can create custom experiences using the [Netlify Open AP
 
 
 6. **Visit your site and verify the OAuth flow is working**
-
-## How it works
-
-![Netlify OAuth + Functions](https://user-images.githubusercontent.com/532272/54178445-106c0600-4453-11e9-998f-564a521dfc6b.png)
 
