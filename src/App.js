@@ -19,6 +19,7 @@ import './App.css'
 export default class App extends Component {
   constructor(props, context) {
     super(props, context)
+    console.log('window.location.hash', window.location.hash)
     const response = parseHash(window.location.hash)
     /* Clear hash */
     removeHash()

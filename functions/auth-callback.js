@@ -50,11 +50,13 @@ exports.handler = async (event, context) => {
       avatar: user.avatar_url || "NA"
     })
 
+    const URI = `${state.url}#${encodedUserData}&csrf=${state.csrf}&token=${Buffer.from(token, 'binary').toString('base64')}`
+    console.log('URI', URI)
     /* Redirect user to authorizationURI */
     return {
       statusCode: 302,
       headers: {
-        Location: `${state.url}#${encodedUserData}&csrf=${state.csrf}&token=${Buffer.from(token, 'binary').toString('base64')}`,
+        Location: URI,
         'Cache-Control': 'no-cache' // Disable caching of this response
       },
       body: '' // return body for local dev
